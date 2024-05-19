@@ -1,9 +1,10 @@
 :root {
   --header-font: "Cinzel", serif;
   --default-font: "Montserrat", sans-serif;
+  --theme-color: #272044;
 }
 body {
-  background-color: #272044;
+  background-color: var(--theme-color);
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -67,7 +68,6 @@ footer {
   background-size: cover;
   background-position: center;
   color: #ffff;
-  padding: 60px 0;
 }
 footer h3 {
   font-weight: 700;
@@ -99,9 +99,38 @@ footer li {
   margin: 0;
   padding: 0;
 }
+main {
+  background: #ffff;
+}
+main h2 {
+  font-family: var(--default-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  opacity: 0.7;
+  color: var(--theme-color);
+  margin: 0;
+}
+main h3 {
+  font-family: var(--header-font);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+main p {
+  font-family: var(--default-font);
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  color: var(--theme-color);
+  line-height: 1.5;
+}
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 80px 0;
 }
 .container {
   max-width: 1400px;
@@ -109,8 +138,17 @@ section {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 70px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive {
+  max-width: 100%;
+  display: block;
 }
 @media (max-width: 960px) {
   header {
@@ -127,5 +165,12 @@ section {
   }
   footer {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+  }
+  section {
+    padding: 30px;
   }
 }

@@ -171,13 +171,19 @@ section.secondary {
   background: #ffff;
   margin: 30px 0;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 .img-card {
-  width: 185px;
-  height: 185px;
+  height: 165px;
 }
 .text-center {
   text-align: center;
@@ -220,5 +226,11 @@ section.secondary {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }

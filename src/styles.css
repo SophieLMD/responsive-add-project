@@ -119,6 +119,21 @@ main h3 {
   line-height: 1.5;
   margin: 0;
 }
+main h4 {
+  font-family: var(--default-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--theme-color);
+  margin: 0;
+}
+main h5 {
+  font-family: var(--default-font);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--theme-color);
+}
 main p {
   font-family: var(--default-font);
   font-weight: 400;
@@ -128,9 +143,12 @@ main p {
   line-height: 1.5;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 100px;
+}
+section.secondary {
+  background: #f8f8f8;
 }
 .container {
   max-width: 1400px;
@@ -143,12 +161,42 @@ section {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.card {
+  background: #ffff;
+  margin: 30px 0;
 }
 .img-responsive {
   max-width: 100%;
   display: block;
+}
+.img-card {
+  width: 185px;
+  height: 185px;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  display: block;
+  color: #ffff;
+  background: var(--theme-color);
+  padding: 16px 32px 16px 32px;
+  font-family: var(--default-font);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.card-body {
+  padding: 30px;
 }
 @media (max-width: 960px) {
   header {

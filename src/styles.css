@@ -176,7 +176,7 @@ section.secondary {
   grid-gap: 0;
 }
 .card-footer {
-  display: block;
+  padding: 0 30px 30px;
 }
 .embed {
   width: 100%;
@@ -210,6 +210,9 @@ section.secondary {
 }
 .card-body {
   padding: 30px;
+}
+.instagram-height {
+  height: 250px;
 }
 @media (max-width: 960px) {
   header {

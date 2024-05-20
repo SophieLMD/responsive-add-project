@@ -172,11 +172,17 @@ section.secondary {
   background: #ffff;
   margin: 30px 0;
 }
+.img-card {
+  height: 177px;
+}
 .card-header.grid {
   grid-gap: 0;
 }
 .card-footer {
   padding: 0 30px 30px;
+}
+.card-body {
+  padding: 30px;
 }
 .embed {
   width: 100%;
@@ -188,9 +194,6 @@ section.secondary {
 .img-responsive {
   width: 100%;
   display: block;
-}
-.img-card {
-  height: 165px;
 }
 .text-center {
   text-align: center;
@@ -208,12 +211,7 @@ section.secondary {
   line-height: 1.5;
   text-decoration: none;
 }
-.card-body {
-  padding: 30px;
-}
-.instagram-height {
-  height: 250px;
-}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;

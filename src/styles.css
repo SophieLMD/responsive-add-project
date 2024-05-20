@@ -172,9 +172,7 @@ section.secondary {
   background: #ffff;
   margin: 30px 0;
 }
-.img-card {
-  height: 177px;
-}
+
 .card-header.grid {
   grid-gap: 0;
 }

@@ -182,9 +182,6 @@ section.secondary {
 .card-footer {
   padding: 0 30px 30px;
 }
-.card-footer.footer-2 {
-  padding: 30px 30px 0;
-}
 .embed {
   width: 100%;
   aspect-ratio: 1/1;
